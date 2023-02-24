@@ -14,7 +14,7 @@ const Counter = () => {
 
   useEffect(() => {
     console.log('renderizando contador')
-  }, [counter])
+  }, )
 
   const handleOnClick = operator => {
     let newValue = operator === '+' 
