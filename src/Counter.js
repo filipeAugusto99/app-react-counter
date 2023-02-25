@@ -10,7 +10,7 @@ const Counter = () => {
 
   useEffect(() => {
     console.log('estado alterado')
-  }, [test])
+  }, [])
 
   useEffect(() => {
     console.log('renderizando contador')

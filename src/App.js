@@ -1,5 +1,7 @@
+//importando bibliotecas
 import React, { useState } from 'react'
 
+//importando os componentes
 import Albums from './Albums'
 import Counter from './Counter'
 import Users from './Users'
