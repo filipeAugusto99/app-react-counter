@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import Loading from '../components/Loading'
+
 const Albums = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [albums, setAlbums] = useState([])
@@ -17,6 +19,7 @@ const Albums = () => {
 
   return (
     <>
+      <Loading visible={isLoading} />
       {
         albums.map(album => {
           return (

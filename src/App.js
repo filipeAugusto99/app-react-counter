@@ -2,10 +2,10 @@
 import React, { useState } from 'react'
 
 //importando os componentes
-import Template from './Template'
-import Albums from './Albums'
-import Counter from './Counter'
-import Users from './Users'
+import Template from './templates/Template'
+import Albums from './pages/Albums'
+import Counter from './pages/Counter'
+import Users from './pages/Users'
 
 const defaultPage = 'albums'
 
