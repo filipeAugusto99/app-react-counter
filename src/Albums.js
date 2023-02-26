@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
 
-import Template from './Template'
-import Loading from './Loading'
-
 const Albums = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [albums, setAlbums] = useState([])
@@ -19,9 +16,7 @@ const Albums = () => {
   }, [])
 
   return (
-    <Template title="Álbuns">
-      <Loading visible={isLoading} />
-      
+    <>
       {
         albums.map(album => {
           return (
@@ -31,7 +26,7 @@ const Albums = () => {
           )
         })
       }
-    </Template>
+    </>
   )
 }
 

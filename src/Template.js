@@ -1,12 +1,15 @@
 import React from 'react'
 
 import Header from './Header'
-import Loading from './Loading'
+import Nav from './Nav'
 
-const Template = ({ children, title }) => {
+const Template = ({ children, pages, activePage, onChangePage }) => {
+  const title = pages[activePage].text
+
   return (
     <>
       <Header title={title}/>
+      <Nav pages={pages} onChangePage={onChangePage} />
       {children}
     </>
   )

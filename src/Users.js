@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 
-import Header from './Header'
 import Loading from './Loading'
 
 const Users = () => {
@@ -21,7 +20,6 @@ const Users = () => {
 
   return (
     <>
-      <Header title='Usuários' />
       <Loading visible={isLoading} />
 
       {
